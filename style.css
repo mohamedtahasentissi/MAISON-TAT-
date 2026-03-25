@@ -1,13 +1,19 @@
 
 body { margin: 0;
   padding: 0;
-  font-family: 'Playfair Display';background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("https://www.wallpaperboulevard.com/Images/product/crocodile-skin-ppak-l.jpg"); background-size: cover; background-position: center;background-attachment: fixed;}
+  font-family: 'Montserrat';background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("https://www.wallpaperboulevard.com/Images/product/crocodile-skin-ppak-l.jpg"); background-size: cover; background-position: center;background-attachment: fixed;  }
+
+h1, h2, h3 {font-family: 'Playfair Display', serif;}
 
 h1 {color: #423004;
 text-align: center;font-size: 70px;}
 
 h2 {color: #F7EBCB;
 text-align: center;font-size: 50px;}
+
+a {text-decoration: none;
+  color: inherit;}
+
 
 h3 {color: #423004;
 text-align: center;font-size: 35px}
@@ -25,7 +31,7 @@ td {border: 2px solid #C9A227;
 border-color: #F7EBCB;}
 
 p {font-size: 25px;
-text-align: center;color: #856C44; font-weight: bold;}
+text-align: center;color: #856C44; font-weight: bold; opacity:0.7;}
 
 ul {list-style-type: square;}
 
@@ -36,13 +42,14 @@ border-color: #423004;border-radius: 10px;}
 justify-content:space-between;
 align-items:center;padding:20px 50px;background-color:#1A1A1A;
 border-bottom:1px solid #F7EBCB;
-position:sticky;top:0;}
+position:sticky;top:0; backdrop-filter: blur(10px);  z-index: 1000;}
 
 .logo{color:#F7EBCB;
 font-size:22px;
 letter-spacing:3px;
 text-decoration:none;
-font-weight:bold;}
+font-weight:bold;font-family: 'Playfair Display'
+}
 
 .menu a{margin-left:30px;
 text-decoration:none;
@@ -84,81 +91,74 @@ transition:0.3s;}
   font-size: 16px;
   color: #423004;}
 
-.news-layout {
-  display: grid;
+.news-layout {display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
-  align-items: start;
-}
+  align-items: start;}
 
-.news-main img {
-  width: 100%;
+.news-main img {width: 100%;
   height: auto;
   object-fit: contain;
   background-color: #000;
-  border-radius: 10px;
-}
+  border-radius: 10px;}
 
-.news-main h3 {
-  font-size: 35px;
+.news-main h3 {font-size: 35px;
   margin-top: 15px;
-  color: #423004;
-}
+  color: #423004;}
 
-.news-main p {
-  font-size: 25px;
-  color: #F7EBCB;
-}
+.news-main p {font-size: 25px;
+  color: #F7EBCB;}
 
-.news-side {
-  display: flex;
+.news-side { display: flex;
   flex-direction: column;
-  gap: 30px;
-}
+  gap: 30px;}
 
-.news-card {
-  width: 100%;
-}
+.news-card {width: 100%;}
 
-.news-card img {
-  width: 100%;
+.news-card img {width: 100%;
   max-height: 320px;
   object-fit: contain;
   object-position: center;
-  border-radius: 10px;
-}
+  border-radius: 10px;}
 
-.news-card img:hover {
-  transform: scale(1.03);
-}
+.news-card img:hover {transform: scale(1.03);}
 
-.news-card h3 {
-  font-size: 20px;
+.news-card h3 {font-size: 20px;
   margin-top: 10px;
-  color: #423004;
-}
+  color: #423004;}
 
-.news-card p {
-  font-size: 16px;
-  color: #F7EBCB;
-}
-.news-main a {
-  text-decoration: none;
-  color: inherit;
-}
+.news-card p { font-size: 16px;
+  color: #F7EBCB;}
+.news-main a { text-decoration: none;
+  color: inherit;}
 
+.news-card img {border: none;}
 
-.news-card img {
-  border: none;
-}
+.news-main img{border: none;}
 
-.news-card a {
-  text-decoration: none;
-  color: inherit;
-}
-.label {
-  font-size: 25px;
+.news-card a {text-decoration: none;
+  color: inherit;}
+
+.label {font-size: 25px;
   letter-spacing: 2px;
   color: #423004;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px;}
+
+.products {padding:80px;}
+
+.product-grid {display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;}
+
+.product {text-align:center;}
+
+.product img {width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:15px;}
+
+.product img:hover {transform:scale(1.05);}
+
+.footer {text-align:center;
+  padding:60px;
+  border-top:1px solid #333;}
